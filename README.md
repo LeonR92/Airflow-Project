@@ -1,5 +1,7 @@
 # Airflow-Project
 
+Welcome to the Apache Airflow Project. This is a simple Data Engineering project that does not include advanced Airflow concepts such as SubDAGs, deadlocks, and encryption using a fernet key. Nor does it encompass advanced features such as log and monitoring implementations or API connections.
+
 ### Prerequisites
 
 Before running the project, ensure you have the following prerequisites set up:
@@ -36,11 +38,11 @@ The data flow in this project is as follows:
 
 1. **Data Extraction**: Raw data is extracted from an AWS S3 bucket.
 
-2. **Data Transformation**: Python script 'transformation' in the `/dags` directory use pandas for data transformation and modeling.
+2. **Data Transformation**: Python script 'transformation' in the `/dags` directory uses pandas for data transformation and modeling.
 
 3. **Data Loading**: Processed data is loaded back into the AWS S3 bucket.
 
-4. **Data Ochestration**: This workflow is ochestrated by Apache Airflow and is set to run daily.
+4. **Data Orchestration**: This workflow is orchestrated by Apache Airflow and is set to run daily.
 
 ### Technologies Used
 
@@ -52,7 +54,25 @@ The data flow in this project is as follows:
 
 - **AWS S3**: Cloud storage service used for data storage.
   
-- **Apache Airflow**: A popular data ochestration tool.
+- **Apache Airflow**: A popular data orchestration tool.
+
+### Workflow examples
+
+**Airflow Dags**:
 
 ![B3C523BD-EBB6-45D3-B212-C361992B463E](https://github.com/LeonR92/Airflow-Project/assets/127194165/5a6814ce-d10b-4fc6-bbae-c2450dcd3100)
+
+**Folder Structure in AWS S3**:
+![D710DA41-7BBF-49D5-A48C-12AE8DA524DB](https://github.com/LeonR92/Airflow-Project/assets/127194165/53def5fe-1d63-486a-8a79-0c8d74769c1e)
+
+**Final Dim and Fact Tables in AWS S3**:
+![A184AF94-BC55-4FA8-B501-515C1677405B](https://github.com/LeonR92/Airflow-Project/assets/127194165/04d8a339-4183-4774-8a3e-3dd26cf1d87b)
+
+**Data Model**:
+![D97BAF85-6E50-4067-A99E-B77FB9DB093E](https://github.com/LeonR92/Airflow-Project/assets/127194165/d70dd655-4ffa-48a1-a507-43815b66dfec)
+
+
+
+
+
 
