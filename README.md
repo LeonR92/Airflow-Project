@@ -1,6 +1,6 @@
 # Airflow-Project
 
-Welcome to the Apache Airflow Project. This is a simple Data Engineering project that does not include advanced Airflow concepts such as SubDAGs, deadlocks, and encryption using a fernet key. Nor does it encompass advanced features such as log and monitoring implementations or API connections.
+Welcome to the Apache Airflow Project. This is a simple Data Engineering project that does not include advanced Airflow concepts such as SubDAGs, deadlocks, and encryption using a fernet key. Nor does it encompass advanced features such as log and monitoring implementations or API connections. The whole setup is production-ready as the docker file does not use any bind mount. If it is to be run on a cloud instance, e.g. EC2, the docker configuration has to be tweaked so as to not bind the port to localhost, but to your cloud ip address.
 
 ### Prerequisites
 
@@ -8,7 +8,7 @@ Before running the project, ensure you have the following prerequisites set up:
 
 - **Docker**: You need to have Docker installed on your local machine or your AWS EC2 instance. You can download Docker from [here](https://www.docker.com/get-started).
 
-- **Docker Compose File**: curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.0/docker-compose.yaml'
+- **Airflow**: curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.0/docker-compose.yaml'
 
 - **AWS S3**: You should have an AWS S3 bucket set up to store your raw and processed data. Ensure that you have your AWS credentials configured correctly to access the bucket.
 
